@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Diego Dominguez M.">
+    <meta name="description" content="Hoja de Vida de Diego Dominguez">
+
+    <title>Hoja de vida | Inicio</title>
+
+    <style media="screen">
+      body{
+       font-family: Helvetica;
+      }
+      a {
+        color:#d60c0c;
+        font-weight: 600;
+      }
+      nav {
+        display: block;
+        padding-bottom: 20px;
+      }
+      nav a {
+        font-size:20px;
+        padding-right:10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <head>
+      <svg width="200px" height="80px">
+        <image xlink:href="img/logo.svg"  ></image>
+      </svg>
+      <h1>Hoja de Vida</h1>
+      <h2>Diego Domínguez Miranda</h2>
+      <h3>14-Nov-1984, Ciudad de México, México</h3>
+    </head>
+    <nav>
+      <a href="index.html" style="padding-right:10px;font-size:20px;">Inicio</a>
+      <a href="educacion.html" style="padding-right:10px;font-size:20px;">Educación</a>
+      <a href="experiencia.html" style="padding-right:10px;font-size:20px;">Experiencia</a>
+    </nav>
+    <img src="img/profile.jpg" width="350px" alt="Imágen de Perfil">
+    <h2>Educación</h2>
+    <table cellpadding="1" cellspacing="0" border="1px">
+      <thead>
+        <tr>
+          <th>Año</th>
+          <th>Institución</th>
+          <th>Lugar</th>
+          <th>¿Culminó?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2018</td>
+          <td>Next University</td>
+          <td>México - Online</td>
+          <td>Si</td>
+        </tr>
+        <tr>
+          <td>2017</td>
+          <td>UTEL University</td>
+          <td>México</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>2007</td>
+          <td>Bachillerato</td>
+          <td>México</td>
+          <td>Si</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form title="Agregar Estudios" id="frmEstudios">
+      <h4>Agregar Estudios</h4>
+
+      <table cellpadding="1" cellspacing="0" border="0px">
+        <tbody>
+          <tr>
+            <td>
+              <label for="cboAnio"><b>Año: </b></label>
+            </td>
+            <td>
+              <select id="cboAnio" style="width:100%;">
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="txtInstitucion"><b>Institución: </b></label></td>
+            <td><input type="text" name="txtInstitucion" required placeholder="Nombre de la institución..." style="width:98%;"></td>
+          </tr>
+          <tr>
+            <td><label for="txtLugar"><b>Lugar: </b></label></td>
+            <td><textarea name="txtLugar" rows="2" cols="25" placeholder="Lugar..." style="width:97%;"></textarea></td>
+          </tr>
+          <tr>
+            <td><label for="optCulmino"><b>¿Culminó? </b></label></td>
+            <td>
+              <input type="radio" name="optCulmino" value="Si">Si
+              <input type="radio" name="optCulmino" value="No">No
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"> <input type="submit" name="cmdEnviar" value="Enviar" style="float:right;"> </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+        <br/>
+
+
+        <br/>
+
+
+    </form>
+
+    <footer>
+      <p>
+        <b>Correo electrónico: </b>diego.dmdsoftware@gmail.com<br/>
+        <b>Página web: </b><a href="https://xpertsti.com" target="_blank">https://xpertsti.com</a><br/>
+      </p>
+    </footer>
+  </body>
+</html>
